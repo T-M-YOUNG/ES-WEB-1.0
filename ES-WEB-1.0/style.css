@@ -170,8 +170,8 @@ img {
 .cli .grid > *:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 /* Game */
@@ -187,5 +187,79 @@ img {
 .languages .card { 
     text-align: center;
     margin: 18px 10px 40px;
+    transition: transform 0.1s ease-in;
 }
 
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/* Works */
+
+.works-head img {
+    width: 90%;
+   justify-self: right;
+}
+
+.works-sub-head img {
+    width: 90%;
+    justify-self: right;
+}
+
+/* Footer */
+.footer .social a {
+    margin: 0 10px;
+}
+
+/* Tablets and under */
+@media(max-width: 768px) {
+    .grid,
+    .works .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .works {
+        height: auto;
+    }
+
+    .works-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .works-form {
+        justify-self: center;
+        margin: auto;
+    }
+
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+}
+
+/* Mobile */
+@media(max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
