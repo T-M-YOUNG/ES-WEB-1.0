@@ -72,6 +72,23 @@
     color: #fff;
 }
 
+/* text colors */
+.text-primary {
+    background-color: var(--primary-color);
+}
+
+.text-secondary {
+    background-color: var(--secondary-color);
+}
+
+.text-dark {
+    background-color: var(--dark-color);
+}
+
+.text-light {
+    background-color: var(--light-color);
+}
+
 
 /* Text sizes */
 .lead {
@@ -96,6 +113,28 @@
 
 .text-center {
     text-align: center;
+}
+
+/* alert */
+.alert {
+    background-color: var(--light-color);
+    padding: 1em 2em;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+.alert i {
+    margin-right: 1rem;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+.alert-error {
+    background-color: var(--error-clor);
+    color: #333;
 }
 
 .flex {
